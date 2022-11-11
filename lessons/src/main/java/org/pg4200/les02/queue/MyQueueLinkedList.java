@@ -1,11 +1,11 @@
 package org.pg4200.les02.queue;
 
-import org.pg4200.les02.list.MyLinkedList;
+import org.pg4200.les02.list.MyMiddleBidirectionalLinkedList;
 
 /**
  * Created by arcuri82 on 16-Aug-17.
  */
-public class MyQueueLinkedList<T> extends MyLinkedList<T> implements MyQueue<T> {
+public class MyQueueLinkedList<T> extends MyMiddleBidirectionalLinkedList<T> implements MyQueue<T> {
 
     /*
         Here, we can simply extend MyLinkedList, and define the queue methods using it.

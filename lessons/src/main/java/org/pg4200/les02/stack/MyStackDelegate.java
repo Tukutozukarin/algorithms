@@ -2,7 +2,7 @@ package org.pg4200.les02.stack;
 
 import org.pg4200.les02.list.MyArrayList;
 import org.pg4200.les02.list.MyList;
-import org.pg4200.les02.list.MyLinkedList;
+import org.pg4200.les02.list.MyMiddleBidirectionalLinkedList;
 
 public class MyStackDelegate<T> implements MyStack<T> {
 
@@ -33,7 +33,7 @@ public class MyStackDelegate<T> implements MyStack<T> {
      */
     public static <T> MyStackDelegate<T> backedByLinkedList(Class<T> klass){
         MyStackDelegate<T> container =  new MyStackDelegate<>();
-        container.delegate = new MyLinkedList<>();
+        container.delegate = new MyMiddleBidirectionalLinkedList<>();
         return container;
     }
 
